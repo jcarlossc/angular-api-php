@@ -4,7 +4,7 @@ Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli
 
 ## Descrição do projeto
 
-O Angular-api-php é um CRUD(Create,Read,Update e Delete) simples em Angular que interage com o banco de dados MariaDB através de uma api Php. 
+O Angular-api-php é um CRUD (Create,Read,Update e Delete) simples em Angular que interage com o banco de dados MariaDB através de uma api Php. 
 
 ## Tecnologias utilizadas
 
@@ -14,13 +14,17 @@ O Angular-api-php é um CRUD(Create,Read,Update e Delete) simples em Angular que
 * Editor Sublime
 * Sistema operacional Windows
 
-## Servidor
+## Instruções
 
-Execute `ng serve` para rodar o servidor. Navegue até `http://localhost:4200/`. O aplicativo será recarregado automaticamente se você alterar qualquer um dos arquivos de origem.
+* Criar uma pasta (com um nome qualquer) em htdocs no XAMPP (c:\xampp\htdocs\pastaNomeQualquer); no caso do WAMPP (c:\wampp\www).
+* Clonar o projeto angular-api-php para a pasta criada anteriormente.
+* Retirar a pasta api-php de src/app/assets e colocá-la ao lado da pasta angular-api-php na pasta anteriormente criada, ou seja, as duas pastas, angular-api-php e api-php ficaram na mesma pasta.
+* Ligar o XAMPP e "startar" o servidor Apache e o MariaDB (o MariaDB só funciona com o Apache ligado).
+* Obs: a pasta db em src/app/assets contém o esquena do banco de dados, não faz parte da estrutura do Angular.
 
-## Build
+## Servidor Angular
 
-Execute `ng build` para construir o projeto. Os artefatos de compilação serão armazenados no diretório `dist/`.
+No prompt de comando, navegue até o diretório angular-api-php e execute `ng serve` para rodar o servidor. Navegue até `http://localhost:4200/`. O aplicativo será recarregado automaticamente se você alterar qualquer um dos arquivos de origem.
 
 ## Mais ajuda
 
