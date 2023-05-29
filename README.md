@@ -11,6 +11,7 @@ O Angular-api-php é um CRUD (Create,Read,Update e Delete) simples em Angular qu
 * Framework Angular 
 * Linguagem de programação Php (api)
 * Stack Xampp (Apache e MariaDB)
+* Bootstrap
 * Editor Sublime
 * Sistema operacional Windows
 
