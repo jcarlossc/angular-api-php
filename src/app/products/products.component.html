@@ -1,0 +1,36 @@
+<h1 class="mb-4 text-light">Sistema de gerenciamento de produtos</h1>
+
+<form #f = "ngForm">
+  <div class="mb-3">
+    <label class="form-label text-light">Nome do Produto</label>
+    <input type="text" class="form-control" name="name" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)] = "selectedProduct.name">
+  </div>
+  <div class="mb-3">
+    <label class="form-label text-light">Preço do Produto</label>
+    <input type="text" class="form-control" name="price" id="exampleInputPassword1" [(ngModel)] = "selectedProduct.price">
+  </div>
+  <button type="submit" (click)="createOrUpdateProduct(f)" class="btn btn-primary">Criar ou Atualizar Produtos</button>
+</form>
+<br/>
+<div>
+<table class="table table-striped table-bordered">
+	<tr>
+		<th class="text-light" style="padding-left: 20px;">ID</th>
+		<th class="text-light">Nome</th>
+		<th class="text-light">Preço</th>
+		<th class="text-light" style="padding-left: 30px;">Operações</th>
+	</tr>
+	<tr *ngFor="let product of products">
+		<td class="text-light" style="padding-left: 20px;">{{ product.id }}</td>
+		<td class="text-light">{{ product.name }}</td>
+		<td class="text-light">{{ product.price }}</td>
+		<td>
+		<div>
+		<input type="button" (click)="selecionarProduto(product)" class="btn btn-primary" value="Editar">
+		
+		<input type="button" (click)="apagarProduto(product.id)" class="btn btn-danger" value="Excluir">
+		</div>
+		</td>
+	</tr>
+</table>
+
