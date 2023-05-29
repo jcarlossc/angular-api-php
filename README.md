@@ -20,7 +20,8 @@ O Angular-api-php é um CRUD (Create,Read,Update e Delete) simples em Angular qu
 * Clonar o projeto angular-api-php para a pasta criada anteriormente.
 * Retirar a pasta api-php de src/app/assets e colocá-la ao lado da pasta angular-api-php na pasta anteriormente criada, ou seja, as duas pastas, angular-api-php e api-php ficaram na mesma pasta.
 * Ligar o XAMPP e "startar" o servidor Apache e o MariaDB (o MariaDB só funciona com o Apache ligado).
-* Obs: a pasta db em src/app/assets contém o esquena do banco de dados, não faz parte da estrutura do Angular.
+* Obs 1: no arquivo api.service.ts está o caminho da api php ( PHP_API = "http://localhost/projetos/angular-api-php/api-php"; ), esse caminho devevar ser trocado pelo caminho do seu sistema, ou seja, ( PHP_API = "http://localhost/pastaNomeQualquer/api-php"; ).
+* Obs 2: a pasta db em src/app/assets contém o esquena do banco de dados, não faz parte da estrutura do Angular.
 
 ## Servidor Angular
 
